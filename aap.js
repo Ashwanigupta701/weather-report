@@ -19,7 +19,7 @@ app.post("/", function(req1, res1) {
      c=response.statusCode;
      if(c==404)
      {
-       res1.sendfile(__dirname +"/failure.html");   
+       res1.sendfile(__dirname +"/failure.html");
      }
      else {
        response.on("data", function(data) {
