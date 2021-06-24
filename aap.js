@@ -17,7 +17,7 @@ app.post("/", function(req1, res1) {
   https.get(url, function(response) {
     console.log(response.statusCode);
      c=response.statusCode;
-     if(c==404)
+     if(c==405)
      {
        res1.sendfile(__dirname +"/failure.html");
      }
